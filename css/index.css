@@ -358,6 +358,15 @@ header {
   white-space: nowrap;
 }
 
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
+  #navDesktop {
+    display: none;
+  }
+}
+
 .container-main main {
   position: absolute !important;
   width: calc(100% - 80px);
@@ -369,4 +378,11 @@ header {
 .container-main main.active {
   width: calc(100% - 300px);
   left: 300px;
+}
+
+@media (max-width: 768px) {
+  .container-main main {
+    width: 100%;
+    left: 0;
+  }
 }
