@@ -2,7 +2,7 @@
 index2.html
 app.js
 
-/css/bootstrap
-/css/test.min.css
-/css/test.css
-/css/index.css
+./css/bootstrap
+./css/test.min.css
+./css/test.css
+./css/index.css
