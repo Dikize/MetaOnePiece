@@ -1,6 +1,6 @@
-var tokenomics = document.getElementById('tokenomics');
+var about = document.getElementById('about');
 var carrousel = document.getElementsByClassName('content-carrousel')[0];
-var figures = tokenomics.querySelectorAll('figure');
+var figures = about.querySelectorAll('figure');
 
 var counter = 0;
 
@@ -23,11 +23,11 @@ var thisX = 0;
 var lastY = -100;
 var thisY = 0;
 
-tokenomics.addEventListener('mousemove', move);
+about.addEventListener('mousemove', move);
 
 function move(e) {
 
-    var rect = tokenomics.getBoundingClientRect();
+    var rect = about.getBoundingClientRect();
     lastX = (rect.left + ((rect.right - rect.left) / 2)) - e.clientX;
     lastY = e.clientY - (rect.top + ((rect.bottom - rect.top) / 2));
 }

@@ -25,6 +25,14 @@
             (n.className += t + "touch");
         })(window, document);
     </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -39,42 +47,42 @@
                         </a>
                     </li>
 
-                    <li  class="list">
+                    <li class="list">
                         <a href="#">
                             <span class="icon"><img src="./assets/img/about.png" alt=""></span>
                             <span class="title">About Us</span>
                         </a>
                     </li>
 
-                    <li  class="list">
+                    <li class="list">
                         <a href="#">
                             <span class="icon"><img src="./assets/img/2.svg" alt=""></span>
                             <span class="title">Tokenomics</span>
                         </a>
                     </li>
 
-                    <li  class="list">
+                    <li class="list">
                         <a href="#">
                             <span class="icon"><img src="./assets/img/roadmap.png" alt=""></span>
                             <span class="title">Roadmap</span>
                         </a>
                     </li>
 
-                    <li  class="list">
+                    <li class="list">
                         <a href="#">
                             <span class="icon"><img src="./assets/img/buy.png" alt=""></span>
                             <span class="title">How to Buy</span>
                         </a>
                     </li>
 
-                    <li  class="list">
+                    <li class="list">
                         <a href="#">
                             <span class="icon"><img src="./assets/img/faq.png" alt=""></span>
                             <span class="title">FAQ</span>
                         </a>
                     </li>
 
-                    <li  class="list">
+                    <li class="list">
                         <a href="#">
                             <span class="icon"><img src="./assets/img/chart.png" alt=""></span>
                             <span class="title">Live Chart</span>
@@ -86,47 +94,56 @@
         </header>
 
         <main class="main">
-            <!------------------------------ (about) ------------------------------>
-            <section id="about" class="">
+            <!------------------------------ (Header) ------------------------------>
+            <section id="headerRight" class="">
+                <div class="container-FireText">
+                    <div class="text">
+                        <h1>One Piece Meta Coins</h1>
+                    </div>
+                    <svg>
+                        <filter id="fire">
+                            <feTurbulence id="turbulence" baseFrequency="0.1 0.1" numOctaves="2" seed="3">
+                                <animate attributeName="baseFrequency" dur="10s" values="0.1 0.1;0.12 0.2" repeatCount="indefinite"></animate>
+                            </feTurbulence>
+                            <feDisplacementMap in="SourceGraphic" scale="10"></feDisplacementMap>
+                        </filter>
+                    </svg>
+                </div>
                 <video src="./assets/img/One Piece.mp4" autoplay muted preload="auto" loop=""></video>
                 <div class="box">
                     <div>
-                        <span><video src="./assets/img/One Piece.mp4" autoplay muted preload="auto" loop=""></video></span>
-                        <span><video src="./assets/img/One Piece.mp4" autoplay muted preload="auto" loop=""></video></span>
-                        <span><video src="./assets/img/One Piece.mp4" autoplay muted preload="auto" loop=""></video></span>
+                        <span><video src="./assets/img/One Piece.mp4" autoplay muted preload="auto"
+                                loop=""></video></span>
+                        <span><video src="./assets/img/One Piece.mp4" autoplay muted preload="auto"
+                                loop=""></video></span>
+                        <span><video src="./assets/img/One Piece.mp4" autoplay muted preload="auto"
+                                loop=""></video></span>
                     </div>
                 </div>
 
             </section>
 
-            <!------------------------------ (tokenomics) ------------------------------>
-            <section id="tokenomics" class="">
+            <!------------------------------ (About) ------------------------------>
+            <section id="about" class="">
                 <div class="content-carrousel">
-                    <figure><img src="./assets/img/onepiece/12.jpg"
-                            alt="Alan Walker - The Spectre" /></figure>
-                    <figure><img src="./assets/img/onepiece/1.jpg" 
-                        alt="Alan Walker - Alone"/>
-                    </figure>
-                    <figure><img
-                            src="./assets/img/onepiece/2.jpg"
-                            alt="OM TELOLET OM - ALAN WALKER" /></figure>
-                    <figure><img src="./assets/img/onepiece/3.jpg"
-                            alt="Alan Walker Live at Albert Hall" /></figure>
-                    <figure><img src="./assets/img/onepiece/4.jpg"
-                            alt="Alan Walker - The Spectre" /></figure>
-                    <figure><img src="./assets/img/onepiece/5.jpg"
-                            alt="Alan Walker has partnered with Battlefield to showcase his new track Alone" /></figure>
-                    <figure><img src="./assets/img/onepiece/6.jpg"
-                            alt="The Drop Dancing GIF by Alan Walker Official" /></figure>
-                    <figure><img src="./assets/img/onepiece/7.jpg"
-                            alt="alone GIF by Alan Walker Official" /></figure>
-                    <figure><img src="./assets/img/onepiece/8.jpg"
-                            alt="alone GIF by Alan Walker Official" /></figure>
-                    <figure><img src="./assets/img/onepiece/9.jpg"
-                            alt="sing me to sleep GIF by Alan Walker Official" /></figure>
+                    <figure><img src="./assets/img/onepiece/12.jpg" alt="Alan Walker - The Spectre" /></figure>
+                    <figure><img src="./assets/img/onepiece/1.jpg" alt="Alan Walker - Alone" /> </figure>
+                    <figure><img src="./assets/img/onepiece/2.jpg" alt="OM TELOLET OM - ALAN WALKER" /></figure>
+                    <figure><img src="./assets/img/onepiece/3.jpg" alt="Alan Walker Live at Albert Hall" /></figure>
+                    <figure><img src="./assets/img/onepiece/4.jpg" alt="Alan Walker - The Spectre" /></figure>
+                    <figure><img src="./assets/img/onepiece/5.jpg" alt="Alan Walker has partnered with Battlefield to showcase his new track Alone" /></figure>
+                    <figure><img src="./assets/img/onepiece/6.jpg" alt="The Drop Dancing GIF by Alan Walker Official" /> </figure>
+                    <figure><img src="./assets/img/onepiece/7.jpg" alt="alone GIF by Alan Walker Official" /></figure>
+                    <figure><img src="./assets/img/onepiece/8.jpg" alt="alone GIF by Alan Walker Official" /></figure>
+                    <figure><img src="./assets/img/onepiece/9.jpg" alt="sing me to sleep GIF by Alan Walker Official" /> </figure>
                 </div>
 
                 <div class="closeImage"></div>
+            </section>
+
+            <!------------------------------ (About) ------------------------------>
+            <section id="tokenomics" class="">
+
             </section>
 
             <!------------------------------ (roadmap) ------------------------------>
@@ -156,7 +173,7 @@
 
     <script src="./assets/js/Navbar/navbar.js" defer></script>
     <script src="./assets/js/animation/customCarrousel.js" defer></script>
-    
+
     <script src="./assets/js/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script src="./assets/js/bootstrap/bootstrap.min.js" defer></script>
 </body>

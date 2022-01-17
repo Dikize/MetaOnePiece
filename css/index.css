@@ -37,13 +37,13 @@ section {
   position: relative;
 }
 
-.container-main main #about {
+.container-main main #headerRight {
   background: #000 !important;
   width: 100%;
   height: 100vh;
 }
 
-.container-main main #about video {
+.container-main main #headerRight video {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,13 +53,13 @@ section {
      object-fit: cover;
 }
 
-.container-main main #about > video {
+.container-main main #headerRight > video {
   -webkit-filter: blur(20px);
           filter: blur(20px);
 }
 
-.container-main main #about .box {
-  position: absolute;
+.container-main main #headerRight .box {
+  position: relative;
   top: calc(50% - 200px);
   left: calc(50% - 200px);
   width: 400px;
@@ -68,7 +68,7 @@ section {
           transform-style: preserve-3d;
 }
 
-.container-main main #about .box > div {
+.container-main main #headerRight .box > div {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -80,7 +80,7 @@ section {
           transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
 }
 
-.container-main main #about .box > div span {
+.container-main main #headerRight .box > div span {
   position: absolute;
   display: block;
   width: 100%;
@@ -91,52 +91,52 @@ section {
   background: #ccc;
 }
 
-.container-main main #about .box > div span:nth-child(1) {
+.container-main main #headerRight .box > div span:nth-child(1) {
   -webkit-transform: rotateX(0deg) translate3d(0, 0, 200px);
           transform: rotateX(0deg) translate3d(0, 0, 200px);
 }
 
-.container-main main #about .box > div span:nth-child(2) {
+.container-main main #headerRight .box > div span:nth-child(2) {
   -webkit-transform: rotateY(90deg) translate3d(0, 0, -200px);
           transform: rotateY(90deg) translate3d(0, 0, -200px);
 }
 
-.container-main main #about .box > div span:nth-child(2) video {
+.container-main main #headerRight .box > div span:nth-child(2) video {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.container-main main #about .box > div span:nth-child(3) {
+.container-main main #headerRight .box > div span:nth-child(3) {
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 200px);
           transform: rotateX(90deg) translate3d(0, 0, 200px);
 }
 
 @media (max-width: 576px) {
-  .container-main main #about .box {
+  .container-main main #headerRight .box {
     top: calc(50% - 100px);
     left: calc(50% - 100px);
     width: 200px;
     height: 200px;
   }
-  .container-main main #about .box > div {
+  .container-main main #headerRight .box > div {
     -webkit-transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
             transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
   }
-  .container-main main #about .box > div span:nth-child(1) {
+  .container-main main #headerRight .box > div span:nth-child(1) {
     -webkit-transform: rotateX(0deg) translate3d(0, 0, 100px);
             transform: rotateX(0deg) translate3d(0, 0, 100px);
   }
-  .container-main main #about .box > div span:nth-child(2) {
+  .container-main main #headerRight .box > div span:nth-child(2) {
     -webkit-transform: rotateY(90deg) translate3d(0, 0, -100px);
             transform: rotateY(90deg) translate3d(0, 0, -100px);
   }
-  .container-main main #about .box > div span:nth-child(3) {
+  .container-main main #headerRight .box > div span:nth-child(3) {
     -webkit-transform: rotateX(90deg) translate3d(0, 0, 100px);
             transform: rotateX(90deg) translate3d(0, 0, 100px);
   }
 }
 
-#tokenomics {
+#about {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -164,7 +164,7 @@ section {
   top: 50%;
   left: 50%;
   width: 176px;
-  height: 99px;
+  height: 150px;
   background: #000;
   border: 1px solid #3b444b;
   overflow: hidden;
@@ -244,6 +244,144 @@ section {
   background: red;
 }
 
+.container-main main #headerRight .container-FireText .text {
+  position: relative;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  -webkit-filter: url(#fire);
+          filter: url(#fire);
+}
+
+.container-main main #headerRight .container-FireText .text h1 {
+  position: relative;
+  font-size: xxx-large;
+  color: #ffeb3b;
+  font-weight: 900;
+  -webkit-box-reflect: below -120px linear-gradient(transparent, #0008);
+  text-shadow: 0 0 10px #ff8c3b, 0 0 40px #ff8c3b, 0 0 80px #ff8c3b, 0 0 160px #ff8c3b, 0 0 240px #ff8c3b;
+}
+
+.container-main main #headerRight .container-FireText svg {
+  width: 0;
+  height: 0;
+}
+
+.container-main main #tokenomics .card-animCard2 {
+  position: relative;
+  width: 363px;
+  height: 450px;
+  margin: 30px;
+  background: #287bff;
+  border-radius: 20px;
+  border-bottom-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+  -webkit-box-shadow: 0 15px 0 #fff;
+          box-shadow: 0 15px 0 #fff;
+  inset: 0 -15px 0 rgba(255, 255, 255, 0.25), 0 45px 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: rgba(250, 250, 250, 0.5);
+}
+
+.container-main main #tokenomics .card-animCard2::before {
+  content: '';
+  position: absolute;
+  top: -140px;
+  left: -40px;
+  width: 100%;
+  height: 120%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  pointer-events: none;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.container-main main #tokenomics .card-animCard2 .icon {
+  position: relative;
+  width: 140px;
+  height: 120px;
+  background: #0e1538;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  -webkit-box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+  inset: 0 -8px 0 #fff;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-main main #tokenomics .card-animCard2 .icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-top-right-radius: 50px;
+  -webkit-box-shadow: 15px -15px 0 15px #0e1538;
+          box-shadow: 15px -15px 0 15px #0e1538;
+}
+
+.container-main main #tokenomics .card-animCard2 .icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-top-left-radius: 50px;
+  -webkit-box-shadow: -15px -15px 0 15px #0e1538;
+          box-shadow: -15px -15px 0 15px #0e1538;
+}
+
+.container-main main #tokenomics .card-animCard2 .icon img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+}
+
+.container-main main #tokenomics .card-animCard2 .content {
+  position: absolute;
+  width: 100%;
+  padding: 30px;
+  padding-top: 140px;
+  text-align: center;
+  color: black;
+}
+
+.container-main main #tokenomics .card-animCard2 .content h2 {
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.container-main main #tokenomics .card-animCard2 .content p {
+  line-height: 1.5em;
+}
+
+.container-main main #tokenomics .card-animCard2 .content a {
+  color: #fff;
+}
+
 header {
   position: relative;
   z-index: 1000;
@@ -273,7 +411,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 0 0 5px;
+  padding: 5px 0 0 5px;
 }
 
 #navDesktop ul li {
@@ -358,11 +496,8 @@ header {
   white-space: nowrap;
 }
 
-@media (max-width: 768px) {
-  header {
-    display: none;
-  }
-  #navDesktop {
+@media (min-width: 768px) {
+  #navDesktop .toggle {
     display: none;
   }
 }
@@ -378,6 +513,32 @@ header {
 .container-main main.active {
   width: calc(100% - 300px);
   left: 300px;
+}
+
+.container-main main #headerRight {
+  padding-top: 22px;
+}
+
+.container-main main #tokenomics {
+  width: 100%;
+  height: auto;
+  background: url("../assets/img/bgTomic.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 768px) {

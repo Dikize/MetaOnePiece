@@ -1,0 +1,76 @@
+#roadmap {
+  background-image: linear-gradient(45deg, #8460ed, #ff1252);
+  overflow-y: hidden;
+}
+
+#roadmap .ship {
+  position: relative;
+  width: 70vw;
+  height: 94vh;
+  margin: 5rem auto;
+  background-image: url("../assets/img/onepiece/mer.jpg");
+  background-size: cover;
+  background-position: 0 -111px;
+  -webkit-box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+}
+
+#roadmap .ship .surface {
+  height: 200px;
+  width: 500%;
+  background-image: url("../assets/img/onepiece/background.png");
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-repeat: repeat-x;
+  -webkit-animation: moveRight 6s linear infinite;
+          animation: moveRight 6s linear infinite;
+}
+
+#roadmap .ship .card {
+  position: absolute;
+  bottom: 0%;
+  left: 24%;
+  -webkit-animation: suspension 6s linear infinite;
+          animation: suspension 6s linear infinite;
+}
+
+@-webkit-keyframes moveRight {
+  100% {
+    -webkit-transform: translateX(-2950px);
+            transform: translateX(-2950px);
+  }
+}
+
+@keyframes moveRight {
+  100% {
+    -webkit-transform: translateX(-2950px);
+            transform: translateX(-2950px);
+  }
+}
+
+@-webkit-keyframes suspension {
+  100%,
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  50% {
+    -webkit-transform: translateY(-9px);
+            transform: translateY(-9px);
+  }
+}
+
+@keyframes suspension {
+  100%,
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  50% {
+    -webkit-transform: translateY(-9px);
+            transform: translateY(-9px);
+  }
+}
