@@ -496,8 +496,8 @@ header {
   white-space: nowrap;
 }
 
-@media (min-width: 768px) {
-  #navDesktop .toggle {
+@media (max-width: 768px) {
+  #navDesktop, header {
     display: none;
   }
 }
@@ -522,10 +522,11 @@ header {
 .container-main main #tokenomics {
   width: 100%;
   height: auto;
-  background: url("../assets/img/bgTomic.jpg");
+  background: url("../assets/img/WELCOME.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0px -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
