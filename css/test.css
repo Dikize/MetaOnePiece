@@ -1,55 +1,125 @@
-.container-icon {
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+.cardRoadmap {
   position: relative;
+  width: 100%;
+  height: 250px;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 50vh;
-  background: radial-gradient(#f00, rgba(0, 0, 0, 0.5)), url(../assets/img/wall.jpg);
-  background-size: cover;
-  background-blend-mode: multiply;
-  font-family: consolas;
 }
 
-.container-icon::before {
-  content: "";
+.card-container {
+  -webkit-perspective: 50em;
+          perspective: 50em;
+}
+
+.card-container:nth-child(1) {
+  --bi: repeating-linear-gradient(30deg, #111 0 0.25em, #333 0 1em);
+}
+
+.card-container:nth-child(2) {
+  --bi: linear-gradient(#555 5em, #0000 3em), linear-gradient(60deg, #880E4F, #1A237E);
+}
+
+.card-container:nth-child(3) {
+  --bi: linear-gradient(#555 5em, #0000 3em), linear-gradient(to bottom, #ffec61, #f321d7);
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  padding: 3em;
+  color: #fff;
+  -webkit-transform: rotateY(30deg) rotateX(15deg);
+          transform: rotateY(30deg) rotateX(15deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.card:hover {
+  -webkit-transform: rotateY(-30deg) rotateX(-15deg);
+          transform: rotateY(-30deg) rotateX(-15deg);
+}
+
+.layers {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: radial-gradient(#f00, rgba(255, 0, 0, 0.75), transparent, transparent);
-  border-radius: 50%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  z-index: -1;
 }
 
-.container-icon::after {
-  content: "";
+.layer {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: #ffffff;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: radial-gradient(#f00, rgba(255, 0, 0, 0.75), transparent, transparent);
-  border-radius: 50%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  background-image: var(--bi);
+  -webkit-transform: translateZ(var(--tz));
+          transform: translateZ(var(--tz));
+  -webkit-box-shadow: 0 0 0.5em #000d inset;
+          box-shadow: 0 0 0.5em #000d inset;
 }
 
-.container-icon .icon {
-  width: 200px;
-  height: 200px;
-  z-index: 1;
-  text-align: center;
+.layer:nth-child(1) {
+  --tz: 0px;
 }
 
-.container-icon .icon svg path {
-  stroke: #fff;
-  stroke-width: 10px;
+.layer:nth-child(2) {
+  --tz: -4px;
+}
+
+.layer:nth-child(3) {
+  --tz: -8px;
+}
+
+.layer:nth-child(4) {
+  --tz: -12px;
+}
+
+.layer:nth-child(5) {
+  --tz: -16px;
+}
+
+.layer:nth-child(6) {
+  --tz: -20px;
+}
+
+.layer:nth-child(7) {
+  --tz: -24px;
+}
+
+.layer:nth-child(8) {
+  --tz: -28px;
+}
+
+.layer:nth-child(9) {
+  --tz: -32px;
+}
+
+.layer:nth-child(10) {
+  --tz: -36px;
+}
+
+.layer:last-child {
+  -webkit-box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
+          box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
 }
