@@ -14,6 +14,10 @@
   background: #ff7b77;
 }
 
+body {
+  background-color: #0e1538 !important;
+}
+
 html {
   height: 100%;
 }
@@ -625,95 +629,6 @@ section {
   }
 }
 
-.container-main main #howToBuy .container-howToBuyCard {
-  position: relative;
-  margin-top: 100px;
-  max-width: 590px;
-  -webkit-transform: skewY(-20deg);
-          transform: skewY(-20deg);
-}
-
-.container-main main #howToBuy .container-howToBuyCard .imgHowToBuyCard {
-  position: relative;
-  width: 100%;
-  height: 180px;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: skewX(45deg);
-          transform: skewX(45deg);
-}
-
-.container-main main #howToBuy .container-howToBuyCard .imgHowToBuyCard:hover img:nth-child(3) {
-  -webkit-transform: translate(100px, -100px);
-          transform: translate(100px, -100px);
-}
-
-.container-main main #howToBuy .container-howToBuyCard .imgHowToBuyCard:hover img:nth-child(2) {
-  -webkit-transform: translate(50px, -50px);
-          transform: translate(50px, -50px);
-  opacity: 0.5;
-}
-
-.container-main main #howToBuy .container-howToBuyCard .imgHowToBuyCard:hover img:nth-child(1) {
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  opacity: 0.1;
-}
-
-.container-main main #howToBuy .container-howToBuyCard .imgHowToBuyCard img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 186px;
-  min-width: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.container-main main #howToBuy .container-howToBuyCard h2 {
-  position: relative;
-  font-size: xx-large;
-  color: #fff;
-  margin: 10px 0 0 23px;
-}
-
-.container-main main #howToBuy .container-howToBuyCard h2 a {
-  text-decoration: none;
-}
-
-.container-main main #howToBuy .container-howToBuyCard .skew {
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transform: skewX(45deg);
-          transform: skewX(45deg);
-  color: #fff;
-}
-
-.container-main main #howToBuy .container-howToBuyCard .skew p {
-  font-size: large;
-  letter-spacing: 2px;
-}
-
-.container-main main #howToBuy .container-howToBuyCard .skew p a {
-  position: relative;
-  padding: 10px;
-  display: inline-block;
-  background: transparent;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  text-decoration: none;
-  margin-top: 20px;
-  border: 2px solid #fff;
-  border-radius: 28px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.container-main main #howToBuy .container-howToBuyCard .skew p a:hover {
-  background: #fff;
-  color: #000;
-}
-
 .container-main main #howToBuy .containerHowToBuyCard .container-cardWavyEffect .cardWavyEffect .box, footer {
   position: relative;
   -webkit-box-reflect: below 15px linear-gradient(transparent, transparent, transparentrgba(0, 0, 0, 0.2));
@@ -768,6 +683,67 @@ section {
 
 .container-main main #howToBuy .containerHowToBuyCard .container-cardWavyEffect .cardWavyEffect .box .content h2 a, footer .content h2 a {
   font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .container-main .containerHowToBuyCard .container-cardWavyEffect {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .container-main .containerHowToBuyCard .container-cardWavyEffect::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00ccff), to(#d400d4));
+    background: linear-gradient(#00ccff, #d400d4);
+    -webkit-animation: CardAnimation 4s linear infinite;
+            animation: CardAnimation 4s linear infinite;
+  }
+  .container-main .containerHowToBuyCard .container-cardWavyEffect::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #0e1538;
+    border-radius: 16px;
+  }
+  .container-main .containerHowToBuyCard .container-cardWavyEffect > div {
+    position: relative;
+    z-index: 10;
+  }
+  @-webkit-keyframes CardAnimation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes CardAnimation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
 }
 
 @-webkit-keyframes animateShootingStarBg {
@@ -1572,16 +1548,37 @@ header {
   margin-top: 54px;
 }
 
-@media (max-width: 833px) {
-  .container-main main #about .cardFaq {
-    width: 480px;
-  }
+.container-main main .container-logoCrypto {
+  height: 85px !important;
+  background: rgba(255, 255, 255, 0.09) !important;
+  border-radius: 17px !important;
+  -webkit-box-shadow: 0 25 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 25 50px rgba(0, 0, 0, 0.15);
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
 }
 
-@media (max-width: 500px) {
-  .container-main main #about .cardFaq {
-    width: 320px;
-  }
+.container-main main .container-logoCrypto:hover {
+  -webkit-transform: translateY(-20px) scale(1.01) !important;
+          transform: translateY(-20px) scale(1.01) !important;
+}
+
+.container-main main .container-logoCrypto a {
+  width: 15% !important;
+}
+
+.container-main main .container-logoCrypto a img {
+  width: 80%;
+  height: auto;
 }
 
 .container-main main #tokenomics {
@@ -1652,11 +1649,6 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-}
-
-.container-main main #howToBuy .container-matryoshBox {
-  position: relative;
-  width: 100%;
 }
 
 .container-main main #howToBuy .containerHowToBuyCard {
@@ -1780,8 +1772,40 @@ header {
   margin-top: 54px;
 }
 
+@media (max-width: 833px) {
+  .container-main .cardFaq {
+    width: 95% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-main .containerHowToBuyCard .container-cardWavyEffect {
+    margin: 20px 0;
+  }
+  .container-main .containerHowToBuyCard .container-cardWavyEffect svg {
+    display: none;
+  }
+  .container-main .containerHowToBuyCard .container-cardWavyEffect .cardWavyEffect .box h2 a {
+    color: #fff;
+  }
+  .container-main .containerHowToBuyCard .container-cardWavyEffect .cardWavyEffect .box::before, .container-main .containerHowToBuyCard .container-cardWavyEffect .cardWavyEffect .box::after {
+    background: transparent !important;
+    width: 0 !important;
+    border: none !important;
+    -webkit-filter: none !important;
+            filter: none !important;
+  }
+  .container-main .containerHowToBuyCard .container-cardWavyEffect .cardWavyEffect .box:hover {
+    color: white !important;
+  }
+  .container-main .containerHowToBuyCard .container-cardWavyEffect .cardWavyEffect .box:hover::before {
+    background: rgba(0, 0, 0, 0.5) !important;
+  }
+}
+
 @media (max-width: 900px) {
-  .container-main main, .container-main footer {
+  .container-main main,
+  .container-main footer {
     width: 100%;
     left: 0;
   }
@@ -1813,4 +1837,21 @@ footer svg {
 footer .footer-copyrightLogo {
   position: relative;
   z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding-bottom: 0 !important;
+    height: auto !important;
+  }
+  footer svg {
+    display: none;
+  }
+  footer::before, footer::after {
+    background: transparent !important;
+    width: 0 !important;
+    border: none !important;
+    -webkit-filter: none !important;
+            filter: none !important;
+  }
 }
