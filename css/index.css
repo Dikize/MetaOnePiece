@@ -986,7 +986,7 @@ footer .container-iconFooter a:hover:nth-child(4) .layer span {
           box-shadow: -1px 1px 3px #1da1f2;
 }
 
-.container-main main #roadmap .boxClock {
+.container-main main .boxClock, .container-main main #roadmap .boxClock {
   position: relative;
   width: 100%;
   margin-top: 34px;
@@ -999,42 +999,14 @@ footer .container-iconFooter a:hover:nth-child(4) .layer span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
 }
 
-.container-main main #roadmap .boxClock::before {
-  content: '';
-  position: absolute;
-  top: 3%;
-  right: 27%;
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9d924), to(#ff2c24));
-  background: linear-gradient(#f9d924, #ff2c24);
-  -webkit-animation: animateClock 5s ease-in-out infinite;
-          animation: animateClock 5s ease-in-out infinite;
-}
-
-.container-main main #roadmap .boxClock::after {
-  content: '';
-  position: absolute;
-  bottom: 7%;
-  left: 27%;
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#01d6ff), to(#0f24f9));
-  background: linear-gradient(#01d6ff, #0f24f9);
-  -webkit-animation: animateClock 5s ease-in-out infinite;
-          animation: animateClock 5s ease-in-out infinite;
-  -webkit-animation-delay: -2.5s;
-          animation-delay: -2.5s;
-}
-
-.container-main main #roadmap .boxClock .clock {
+.container-main main .boxClock .clock, .container-main main #roadmap .boxClock .clock {
   position: relative;
-  width: 500px;
-  height: 250px;
+  width: auto;
+  height: auto;
+  padding: 20px 10px;
   background: rgba(255, 255, 255, 0.05);
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
@@ -1045,7 +1017,7 @@ footer .container-iconFooter a:hover:nth-child(4) .layer span {
           backdrop-filter: blur(20px);
 }
 
-.container-main main #roadmap .boxClock .clock .container-clock {
+.container-main main .boxClock .clock .container-clock, .container-main main #roadmap .boxClock .clock .container-clock {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1059,12 +1031,16 @@ footer .container-iconFooter a:hover:nth-child(4) .layer span {
   height: 100%;
 }
 
-.container-main main #roadmap .boxClock .clock .container-clock strong {
+.container-main main .boxClock .clock .container-clock .bloc, .container-main main #roadmap .boxClock .clock .container-clock .bloc {
+  margin: 10px;
+}
+
+.container-main main .boxClock .clock .container-clock strong, .container-main main #roadmap .boxClock .clock .container-clock strong {
   font-size: 6em;
   color: #fff;
 }
 
-.container-main main #roadmap .boxClock .clock .container-clock strong:nth-child(odd) {
+.container-main main .boxClock .clock .container-clock strong:nth-child(odd), .container-main main #roadmap .boxClock .clock .container-clock strong:nth-child(odd) {
   padding: 5px 15px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.05);
@@ -1074,7 +1050,7 @@ footer .container-iconFooter a:hover:nth-child(4) .layer span {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.container-main main #roadmap .boxClock .clock .container-clock #seconds {
+.container-main main .boxClock .clock .container-clock #seconds {
   color: #f9d524;
 }
 
@@ -1105,6 +1081,12 @@ footer .container-iconFooter a:hover:nth-child(4) .layer span {
   100% {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-main main .boxClock .clock, .container-main main #roadmap .boxClock .clock {
+    width: 90%;
   }
 }
 
