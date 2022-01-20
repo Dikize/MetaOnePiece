@@ -445,6 +445,65 @@ section {
           transform: rotateY(-30deg) rotateX(-15deg);
 }
 
+.Card .phase-check {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.Card .phase-check p {
+  margin: 0 0 0 10px;
+}
+
+.Card .phase-check .checkbox-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 19px;
+  height: 19px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #97b9de;
+  border-radius: 50%;
+  background-color: #fecb5b;
+}
+
+.Card .phase-check .checkbox-wrapper.outline {
+  width: 26px;
+  height: 26px;
+  min-width: 1px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  border: 2.5px none #199294;
+  background-color: #42416c;
+}
+
+.Card .phase-check .checkbox-wrapper.checked {
+  width: 26px;
+  height: 26px;
+  border-style: none;
+  background-color: #00f01da6;
+}
+
 .layers {
   position: absolute;
   left: 0;
