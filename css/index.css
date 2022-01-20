@@ -1648,7 +1648,7 @@ header {
 .container-main main #roadmap {
   background-color: #000;
   color: #fff;
-  min-height: 100vh;
+  min-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1674,7 +1674,7 @@ header {
 }
 
 .container-main main #howToBuy {
-  min-height: 100vh;
+  min-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1742,7 +1742,7 @@ header {
 }
 
 .container-main main #howToBuy .containerHowToBuyCard .container-cardWavyEffect .cardWavyEffect .box:hover::before {
-  background: #fff;
+  background: #283ba1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1758,7 +1758,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
+  min-height: auto;
   background-color: #f8f8f8;
   background: url(../assets/img/onepiece/9.jpg);
   background-attachment: fixed;
