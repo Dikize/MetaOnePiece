@@ -1813,6 +1813,24 @@ header {
   margin-top: 54px;
 }
 
+.container-main main #faq .cardFaq .cardFaq-text div h2 span {
+  width: 26px;
+  height: 26px;
+  min-width: 1px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+  border: 2.5px none #199294;
+  background-color: #221ed8a8;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.container-main main #faq .cardFaq .cardFaq-text div h2 span p {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
 @media (max-width: 833px) {
   .container-main .cardFaq {
     width: 95% !important;
